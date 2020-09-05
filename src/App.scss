@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+  background-color: #4067e9;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  //background-color: #282c34;
+  //min-height: 100vh;
+  //display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  //color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.white-card {
+  background: #FFFFFF;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  height: 200px;
+  width: 160px;
+  margin: 10px;
+  float: left;
+  align-content: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.green-card {
+  background: #6BB324;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  height: 200px;
+  width: 160px;
+  margin: 10px;
+  float: left;
+  align-content: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-card:hover {
+  border: 5px solid #6BB324;
+  box-sizing: border-box;
+}
+
+.card-text {
+  margin: 0px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: calc(4px + 2vmin);
+  font-weight: 500;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  //display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.game-description {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.loading-message {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 21px;
+  display: block;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+.titles {
+  padding: 20px;
+}
+
+.noctm-visual-fix {
+  margin-bottom: 100px;
+}
