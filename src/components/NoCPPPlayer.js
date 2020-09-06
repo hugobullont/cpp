@@ -17,6 +17,7 @@ export default class NoCPPPlayer extends React.Component {
     componentDidMount = () => {
         this.setState({loadingMessage: 'Barajando Cartas...', loading: true});
         getWhiteCards().then((value)=>{
+            console.log(value);
             this.setState({loading: false});
             this.setState({whiteCards: value, loadingMessage: ''});
         })
@@ -34,15 +35,15 @@ export default class NoCPPPlayer extends React.Component {
         this.state.whiteCards.forEach(element => {
             let type = "";
             
-            if(element.id === parseInt(this.state.selectedCard)){
+            if(element.CardID === parseInt(this.state.selectedCard)){
                 type="green";
             }
-            cards.push(<Card key={'card'+ element.id} cardId={element.id} content={element.content} onClick={this.onClickCard} type={type}/>);
+            cards.push(<Card key={'card'+ element.CardID} cardId={element.CardID} content={element.Text} onClick={this.onClickCard} type={type}/>);
         });
 
         return (
             <div className="noctm-visual-fix">
-                <span className="game-title titles">Hora de Jugar</span>
+                <span className="game-title titles">No eres un CPP <strike className="strike-title">¿o sí?</strike></span>
                 <span className="game-description titles">Escucha al jugador <strong>CPP</strong> y dale click a tu mejor carta.</span>
                 <div className="App-header">
                     {cards}

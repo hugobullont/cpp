@@ -1,8 +1,8 @@
 
-const API_URL = "http://localhost:3000/";
+const API_URL = "http://localhost:3010/";
 
 const getWhiteCards = async () => {
-    let response = await fetch(API_URL + 'whiteCards', {
+    let response = await fetch(API_URL + 'WhiteCards/5', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
