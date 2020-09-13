@@ -1,3 +1,7 @@
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 .App {
   text-align: center;
   background-color: #0065a0;
@@ -93,7 +97,95 @@
   width: 100%;
 }
 
+.login-form {
+  padding: 40px;
+}
+
+.login-label {
+  font-family: 'Fredoka One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 21px;
+  display: block;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.login-input {
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  border-radius: 10px;
+  font-size: 28px;
+  border-color: transparent;
+}
+
+.login-input-code {
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  border-radius: 10px;
+  font-size: 28px;
+  border-color: transparent;
+}
+
+.login-button {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #607D8B;
+  margin: 40px;
+  padding: 20px 75px;
+  font-size: 24px;
+  border-radius: 15px;
+  font-family: 'Fredoka One', cursive;
+  border-color: transparent;
+  box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.42);
+}
+
+.login-button:hover {
+  background-color: #757575;
+}
+
+.login-game-title {
+  font-family: 'Fredoka One', cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 42px;
+  //display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.login-game-description {
+  font-family: 'Fredoka One', cursive;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 21px;
+  display: block;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .game-title {
+  font-family: 'Fredoka One', cursive;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -105,6 +197,7 @@
 }
 
 .game-description {
+  font-family: 'Fredoka One', cursive;
   font-style: normal;
   font-weight: 450;
   font-size: 18px;
