@@ -1,10 +1,12 @@
 import React from 'react';
 import CreateGame from '../createGame/CreateGame';
 import JoinGame from '../joinGame/JoinGame';
+import HowToPlay from '../shared/HowToPlayBox';
 
 export default class LoginPage extends React.Component {
     state = {
         currentScreen: 'Login',
+        showHowToPlay: false,
     }
 
     onJoinClick = () => {
@@ -17,6 +19,14 @@ export default class LoginPage extends React.Component {
 
     onBackClick = () => {
         this.setState({currentScreen: 'Login'});
+    }
+
+    onHowToPlayClick = () => {
+        this.setState({showHowToPlay: true});
+    }
+
+    onCloseHowToPlay = () => {
+        this.setState({showHowToPlay: false});
     }
 
     render = () => {
@@ -32,7 +42,11 @@ export default class LoginPage extends React.Component {
                                 <button className="login-button" onClick={this.onJoinClick}>Unirse a un Juego</button>
                                 <button className="login-button" onClick={this.onCreateClick}>Crear Nuevo Juego</button>
                             </div>
+                            <div className="login-form">
+                                <button className="login-button" onClick={this.onHowToPlayClick}>¿Cómo Jugar?</button>
+                            </div>
                         </div>
+                        <HowToPlay open={this.state.showHowToPlay} onClose={this.onCloseHowToPlay}/>
                     </div>
                 );
             case 'Create':
@@ -53,7 +67,11 @@ export default class LoginPage extends React.Component {
                                 <button className="login-button" onClick={this.onJoinClick}>Unirse a un Juego</button>
                                 <button className="login-button" onClick={this.onCreateClick}>Crear Nuevo Juego</button>
                             </div>
+                            <div className="login-form">
+                                <button className="login-button" onClick={this.onHowToPlayClick}>¿Cómo Jugar?</button>
+                            </div>
                         </div>
+                        <HowToPlay open={this.state.showHowToPlay} onClose={this.onCloseHowToPlay}/>
                     </div>
                 );
         }

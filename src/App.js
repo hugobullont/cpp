@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Lobby/>
+        <LoginPage/>
       </div>  
     </div>
   );
